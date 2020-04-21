@@ -1,414 +1,197 @@
-*{
-    color:black;
-    padding:0px;
-    margin:0px;
-	text-decoration:none;
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    box-sizing:border-box;
-}
-
-title{
-    display:none;
-}
-
-wrapper{
-    width:100vw;
-    height:1000px;
-}
-
-
-/* FIRST ROW */
-nav{
-    display:grid;
-    width:100%;
-    height: 99px;
-    border-style:solid;
-    border-width: 10px 0px 10px 0px;
-    border-color:#f44336;
-    color:#fff;
-    background-color:white;
-}
-
-.div-logo{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width:75px;
-    height:75px;
-    margin-left:10px;
-    margin-top:2px;
-}
-
-.div-logo img{
-    width:75px;
-    height: 75px;
-    filter: grayscale(0%);
-}
-
-.div-logo img:hover{
-    filter: grayscale(15%);
-}
-
-.nav-element{
-    text-align:center;
-    color:black;
-    margin-top:31px;
-    font-weight: bold;
-    font-size: 16px;
-    color:black;
-}
-
-.nav-element a{
-    padding:6px;
-}
-
-.nav-element a:hover{
-    background-color:#f1f1f1;
-}
-
-
-.div-language{
-    grid-column-start:6;
-    grid-column-end:7;
-    text-align:center;
-    color:black;
-    height:99px;
-}
-
-.div-language .dropdown{
-    margin-top:21px;
-}
-
-.div-language .dropbtn{
-    padding: 8px 8px;
-    width:50px;
-    height:37px;
-}
-
-.dropbtn {
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    background-color:white;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color:#f1f1f1;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown:hover .dropdown-content{
-    display:block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
-  right:0px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-.div-menu .dropdown-content{
-    margin-top:-1px;
-}
-
-.div-menu{
-    display:none;
-}
-
-
-/* SECOND ROW */
-.slideshow-container {
-    grid-row:2;
-    width: 100%;
-    min-height: 124px;
-    height: auto;
-    margin: auto;
-    margin-top:0px;
-    margin-bottom:0px;
-    display:block;
-}
-
-.mySlides {
-    display: none;
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 0px;
-    margin-bottom: -5px;
-    display:block;
-    position:relative;
-}
-
-.text {
-    height:0px;
-    color: #f2f2f2;
-    font-size: 15px;
-    position: relative;
-    bottom: 28px;
-    text-align: center;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    z-index:1;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-/* THIRD ROW */
-.logo-with-text{
-    border-style:solid;
-    border-width: 10px 0px 10px 0px;
-    border-color:#f44336;
-    width:100%;
-    height:60vw;
-    max-height:271px;
-    display:grid;
-    background-color:white;
-    position:relative;
-}
-
-.logo-with-text img{
-    grid-column-start: 1;
-    grid-column-end:1;
-    position:relative;
-    width:40vw;
-    max-width:230px;
-    height:40vw;
-    max-height:230px;
-    margin:auto;
-    margin-left:5px;
-    margin-right:0px;
-}
-
-.text-block{
-    grid-row:1;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display:grid;
-    margin-left:12px;
-    height:40vw;
-    max-height:230px;
-}
-
-.text-block div{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display:block;
-    text-align:center;
-    font-size:25px;
-    margin-top:10px;
-    height:32px;
-}
-
-.text-block p{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    height:32vw;
-    max-height:200px;
-    overflow:hidden;
-}
-
-@media only screen and (max-width: 670px){
-    .text-block div{
-        font-size:3vw;
-    }
-}
-
-
-/* FOURTH ROW*/
-.facebook-post{
-    width:100%;
-    height:430px;
-}
-
-
-.facebook-post iframe{
-    border:none;
-    overflow:hidden;
-    height:430px;
-    max-width:600px;
-    background: white;
-    float:left;
-    grid-row:3;
-}
-
-
-/* phone settings */
-@media only screen and (max-width: 600px){
-    header{
+    /* Overall settings */
+    *{
+        color:black;
+        padding:0px;
         margin:0px;
+    	text-decoration:none;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        box-sizing:border-box;
     }
-
-    .nav-element{
+    title{
         display:none;
     }
+    h1{
+        color: white;
+        line-height: 7vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
+    /* Basic settings for all screen sizes ****************************************************/
+    /* START Fixed part*/
+    .Menu {/* Fixed menu on top right corner */
+        width: 18vw;
+        height: auto;
+        right: 0;
+        top: 0;
+        position: fixed;
+        background-color: rgba(167, 63, 45, 0.8);
+        z-index: 2;
+    }
+    .Menu a {/* Fixed menu on top right corner */
+        display: block;
+        height: 3vw;
+        width: 100%; 
+        line-height: 3vw;
+        text-align: center;
+        font-size: 1.7vw;
+
+        border-bottom: 0.2vw solid #7d2e20;
+        color: white;
+        font-weight: bold;
+    }
+    .Menu a:hover{ /* Fixed menu on top right corner */
+        background-color: rgba(167, 63, 45, 0.5);
+    }
+    .Menu a:active{ /* Fixed menu on top right corner */
+        background-color: rgba(167, 63, 45, 0.9);
+        position: relative;
+        top: 1px
+    }
+    .Menu a.active{ /* Fixed menu on top right corner */
+        background-color: rgba(167, 63, 45, 1);
+    }
+    /*----------------------------------------------------*/
+    #Slideshow { /* Slideshow on top of each page */
+        background-color: pink;
+        width: 100vw;
+        height: 20vw;
+        top: 0;
+        position: fixed;
+        z-index: 0;
+    }
+
+    /* END Fixed part*/
+    /* START Header part*/
+    /*----------------------------------------------------*/
+    #Header { /* Parent header for the logo and title */
+        background-color: transparent;
+        width: 60vw;
+        height: 8vw;
+        z-index: 4;
+    }
+    .Head_Pos_Fix{ /* Fix the parent header until certain scroll */
+        top: 0;
+        position: fixed;
+    }
+    .Head_Pos_Rel{ /* Set margin of the parent header from certain scroll */
+        margin-top: 15vw;
+        position:  relative;
+    }
+    /*----------------------------------------------------*/
+    #Logo { /* Logo on top left corner */
+        width: 10%;
+        height: 8vw;
+        padding: 0.5vw 0.5vw 1.5vw 0.5vw;
+        float: left;
+        position: relative;
+    }
+    #Logo img{ /* Logo on top left corner */
+        height: 100%;
+        width: auto;
+
+    }
+    /*----------------------------------------------------*/
+    #Title { /* Title on top */
+        position: relative;
+        height: 8vw;
+        width: 90%;
+        float: right;
+        line-height: 7vw;
+        text-align: center;
+        font-size: 3vw;
+        color: white;
+    }
+    /*----------------------------------------------------*/
+    /* END Header part*/
+    /* START Content part*/
+    #Content {  /* Parent of the entire content section */
+        height: auto;
+        background-color: white;
+        background-image: linear-gradient(to bottom right, #e8e6e6, white);
+        position: relative;
+        overflow: auto;
+        z-index: 1;
+        padding: 5vw 0vw 5vw 5vw;
+    }
+    .Con_Marg_Fix{ /* Add a top margin to the content section until certain scroll*/
+        margin-top: 25vw;
+    }
+    .Con_Marg_Rel{ /* Add a smaller top margin to the content section from certain scroll*/
+        margin-top: 2vw; 
+    }
+    /*----------------------------------------------------*/
+    #Information{ /* Section with all the main text */
+        float: left;
+        position: relative;
+        font-size: 1.5vw;
+        width: 65vw;
+    }
+    .Text_link{ /* Decoration of links in main text (<a> tags)*/
+        text-decoration: underline;
+    }
+    .myButton { /* Button in main text */
+        background-color:#a73f2d;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-size: 1.5vw;
+        font-weight:bold;
+        padding:7px 23px;
+        text-decoration:none;
+        text-shadow:0px -1px 0px #7a2a1d;
+        }
+    .myButton:hover { /* Button in main text */
+        background-color:#b34332;
+    }
+    .myButton:active { /* Button in main text */
+        position:relative;
+        top:1px;
+    }
+    .Groepsfoto{ /* Scale foto's in main text */
+        width: 40vw;
+        margin-left: 10vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    /*----------------------------------------------------*/
+    #Socials{ /* Social media links at right side of page */
+        position: relative;
+        float: right;
+        width: 15vw;
+    }
+    .Icon{ /* Scale social media icons*/
+        vertical-align: middle;
+        margin: 1vw;
+        width: 3vw;
+    }
+    /*----------------------------------------------------*/
+
+    /* Tablet settings ********************************************************************/
+    @media only screen and (max-width: 800px){
+    /* START Fixed part*/
+
+    /* END Fixed part*/
+    /* START Header part*/
+
+    /* END Header part*/
+    /* START Content part*/
+
+    /* END Content part*/
+
+    /* Phone settings ***************************************************************************/
+    @media only screen and (max-width: 500px){
+    /* START Fixed part*/
     
-    .div-language{
-        grid-column-start:6;
-        grid-column-end:7;
-    }
-    
-    .div-menu{
-        display:block;
-        grid-column-start: 7;
-        grid-column-end: 9;
-        width:75px;
-        height:75px;
-    }
-    
-    .div-menu img{
-        width:75px;
-        height:75px;
-        filter: brightness(0%);
-    }
-    
-    .div-menu img:hover{
-        filter: brightness(100%);
-    }
+    /* END Fixed part*/
+    /* START Header part*/
 
-    .facebook-post iframe{
-        width:100%
-    }
+    /* END Header part*/
+    /* START Content part*/
 
-    .footer{
-        font-size:0.7em;
-    }
-
-    .social-media{
-        font-size:0.85em;
-    }
-}
-
-
-/*LAST ROW*/
-
-.footer{
-    height:99px;
-    border-style:solid;
-    border-width: 10px 0px 0px 0px;
-    border-color:#f44336;
-    color: darkgray;
-    display:grid;
-}
-
-.social-media .social a{
-    color:darkgray;
-}
-
-.social-media .social a:hover{
-    color:black;
-}
-
-.footer > p{
-    color: darkgray;
-    grid-row:1;
-    text-align:center;
-    margin-top:5px;
-}
-
-.footer .social-media img{
-    width:20px;
-    height:20px;
-}
-
-.footer .social-media{
-    font-size:16px;
-    display:grid;
-    margin:10px 10px 10px 10px;
-    grid-row:2;
-}
-
-.footer .social-media .social{
-    grid-column:1;
-}
-
-.footer .social-media .fb{
-    grid-row:1;
-    grid-column:1;
-    text-align:center;
-}
-
-.footer .social-media .ig{
-    grid-row:12;
-    grid-column:1;
-    text-align:center;
-}
-
-.footer .social-media .mail{
-    grid-row:3;
-    grid-column:1;
-    text-align:center;
-}
-
-
-.footer .social-media .bezoekadres{
-    grid-column:2;
-}
-
-.bezoekadres a{
-    color:darkgray;
-}
-
-.bezoekadres a:hover a{
-    color:black;
-}
-
-.bezoekadres p{
-    color: darkgray;
-    text-align:center;
-}
+    /* END Content part*/
+    /* Phone settings */
+     

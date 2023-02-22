@@ -58,7 +58,7 @@
     #Slideshow { /* Slideshow on top of each page */
         background-color: pink;
         width: 100vw;
-        height: 20vw;
+        height: 25vw;
         top: 0;
         position: fixed;
         z-index: 0;
@@ -70,7 +70,8 @@
     #Header { /* Parent header for the logo and title */
         background-color: transparent;
         width: 60vw;
-        height: 8vw;
+        height: 4vw;
+        /*margin-top: 4vw;*/
         z-index: 4;
     }
     .Head_Pos_Fix{ /* Fix the parent header until certain scroll */
@@ -118,7 +119,7 @@
         padding: 5vw 0vw 5vw 5vw;
     }
     .Con_Marg_Fix{ /* Add a top margin to the content section until certain scroll*/
-        margin-top: 25vw;
+        margin-top: 31vw;
     }
     .Con_Marg_Rel{ /* Add a smaller top margin to the content section from certain scroll*/
         margin-top: 2vw; 
@@ -159,9 +160,10 @@
     }
     /*----------------------------------------------------*/
     #Socials{ /* Social media links at right side of page */
-        position: relative;
+        position: fixed;
         float: right;
-        width: 15vw;
+        width: 10vw;
+        margin-left: 85vw;
     }
     .Icon{ /* Scale social media icons*/
         vertical-align: middle;

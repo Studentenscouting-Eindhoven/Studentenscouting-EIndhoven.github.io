@@ -1,14 +1,24 @@
-var slideIndex = 0;
-showSlides();
+const imageArray = [
+     "BBQ",
+     "BordStele",
+     "GietIjzer",
+     "KampVuur",
+     "KerstDiner_Group",
+     "Picture1",
+     "Picture2",
+     "SSN-SSW-group",
+     "StrohComel"
+]
+
+let i = 0;
 
 function showSlides() {
-     var i;
-     var slides = document.getElementsByClassName("mySlides");
-     for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+     if (i >= imageArray.length) {
+          i = 0;
      }
-     slideIndex++;
-     if (slideIndex > slides.length) {slideIndex = 1}
-     slides[slideIndex-1].style.display = "block";
-     setTimeout(showSlides, 4000); // Change image every 3.5 seconds
+     document.getElementById("slideShow").style.backgroundImage = "url('../images/header/"+ imageArray[i] +".jpg')";
+     i++;
+     setTimeout(showSlides, 6000)
 }
+
+showSlides();

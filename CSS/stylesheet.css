@@ -11,7 +11,7 @@
         display:none;
     }
     h1{
-        color: white;
+        color: black;
         line-height: 7vw;
         font-size: 3vw;
         text-align: center;
@@ -22,47 +22,66 @@
 
     /* Basic settings for all screen sizes ****************************************************/
     /* START Fixed part*/
-    .Menu {/* Fixed menu on top right corner */
-        width: 18vw;
+    .menu {
+        width: 90%;
         height: auto;
-        right: 0;
-        top: 0;
-        position: fixed;
-        background-color: rgba(167, 63, 45, 0.8);
         z-index: 2;
+        display: flex;
+        margin: 1vw 3vw;
+        align-items: start;
     }
-    .Menu a {/* Fixed menu on top right corner */
-        display: block;
-        height: 3vw;
-        width: 100%; 
-        line-height: 3vw;
+    .menu a {
+        margin-left: 1vw;
+        padding: 10px 20px;
         text-align: center;
-        font-size: 1.7vw;
-
-        border-bottom: 0.2vw solid #7d2e20;
+        font-size: 1vw;
         color: white;
-        font-weight: bold;
+        border-radius: 10px;
     }
-    .Menu a:hover{ /* Fixed menu on top right corner */
-        background-color: rgba(167, 63, 45, 0.5);
+    .menu a:hover{
+        background-color: #9D2A2A;
     }
-    .Menu a:active{ /* Fixed menu on top right corner */
-        background-color: rgba(167, 63, 45, 0.9);
+    .menu a:active{ /* Fixed menu on top right corner */
+        background-color: #BC3333;
         position: relative;
         top: 1px
     }
-    .Menu a.active{ /* Fixed menu on top right corner */
+    .menu a.active{ /* Fixed menu on top right corner */
         background-color: rgba(167, 63, 45, 1);
     }
-    /*----------------------------------------------------*/
-    #Slideshow { /* Slideshow on top of each page */
-        background-color: pink;
-        width: 100vw;
-        height: 25vw;
-        top: 0;
-        position: fixed;
-        z-index: 0;
+
+    #menuSelected {
+        font-weight: bold;
+        background-color: white;
+        
+        color: black;
     }
+
+    #menuSelected:hover {
+        background-color: #D5D5D5;
+    }
+
+    /*----------------------------------------------------*/
+    #slideShow { /* Slideshow on top of each page */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50vw;
+        height: 100vh;
+        border-width: 0px;
+        border-style: solid;
+        border-image-source: linear-gradient(hsl(0 0% 100% / .5), hsl(0 0% 100% / .5));
+        border-image-slice: fill 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #slideImage {
+        width: 15vw;
+    }
+
 
     /* END Fixed part*/
     /* START Header part*/
@@ -134,24 +153,6 @@
     .Text_link{ /* Decoration of links in main text (<a> tags)*/
         text-decoration: underline;
     }
-    .myButton { /* Button in main text */
-        background-color:#a73f2d;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-size: 1.5vw;
-        font-weight:bold;
-        padding:7px 23px;
-        text-decoration:none;
-        text-shadow:0px -1px 0px #7a2a1d;
-        }
-    .myButton:hover { /* Button in main text */
-        background-color:#b34332;
-    }
-    .myButton:active { /* Button in main text */
-        position:relative;
-        top:1px;
-    }
     .Groepsfoto{ /* Scale foto's in main text */
         width: 40vw;
         margin-left: 10vw;
@@ -159,16 +160,21 @@
         margin-bottom: 2vw;
     }
     /*----------------------------------------------------*/
-    #Socials{ /* Social media links at right side of page */
-        position: fixed;
-        float: right;
-        width: 10vw;
-        margin-left: 85vw;
+    #socialsContainer{ /* Social media links at right side of page */
+        margin-left: 4vw;
     }
-    .Icon{ /* Scale social media icons*/
+
+    #socialsContainer a {
+        display: flex;
+        margin-bottom: 0.5vw;
+    }
+    .socialsIcon{ /* Scale social media icons*/
         vertical-align: middle;
-        margin: 1vw;
-        width: 3vw;
+        width: 1vw;
+        margin-right: 4px;
+    }
+    .socialsText{
+        color: white;
     }
     /*----------------------------------------------------*/
 
@@ -185,6 +191,7 @@
     /* END Content part*/
 
     /* Phone settings ***************************************************************************/
+    }
     @media only screen and (max-width: 500px){
     /* START Fixed part*/
     
@@ -196,4 +203,4 @@
 
     /* END Content part*/
     /* Phone settings */
-     
+    }    

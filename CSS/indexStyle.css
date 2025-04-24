@@ -1,0 +1,62 @@
+body {
+    display: flex;
+}
+
+#leftSide {
+    background-color: #A72D2D;
+    height: 100vh;
+    width: 50vw;
+}
+
+#rightSide {
+    background-color: #A72D2D;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#indexContainer {
+    width: 90%;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#indexLineText {
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+#indexLine {
+    width: 6px;
+    background-color: white;
+    margin-right: 1vw;
+    border-radius: 10px;
+}
+
+#indexText {
+    color: white;
+    width: 95%;
+    font-size: 1vw;
+}
+
+.button {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.button:hover {
+    background-color: #D5D5D5;
+}
+
+.button:active {
+    position: relative;
+    top: 1px
+}

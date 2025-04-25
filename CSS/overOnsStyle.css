@@ -1,0 +1,29 @@
+h2 {
+    color: white;
+}
+
+#overOnsContainer {
+    margin-left: 4vw;
+    overflow-y: scroll;
+    width: 90%;
+}
+
+.Groepsfoto {
+    width: 30vw;
+    margin: 3vw 0;
+}
+
+
+.overOnsText {
+    color: white;
+}
+
+#socialsContainer {
+    margin: 0;
+    margin-top: 2vw;
+}
+
+.Text_link {
+    color: white;
+    text-decoration: underline;
+}

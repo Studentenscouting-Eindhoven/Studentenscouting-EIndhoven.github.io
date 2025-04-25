@@ -1,22 +1,3 @@
-body {
-    display: flex;
-}
-
-#leftSide {
-    background-color: #A72D2D;
-    height: 100vh;
-    width: 50vw;
-}
-
-#rightSide {
-    background-color: #A72D2D;
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #indexContainer {
     width: 90%;
     margin-left: 4vw;
@@ -42,21 +23,17 @@ body {
     font-size: 1vw;
 }
 
-.button {
-    padding: 15px 20px;
-    background-color: white;
-    border-radius: 10px;
-    width: 40%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1vw;
-}
+@media (orientation: portrait) {
+    
+    #indexLineText {
+        margin-top: 2vh;
+    }
 
-.button:hover {
-    background-color: #D5D5D5;
-}
+    #indexLine {
+        display: none;
+    }
 
-.button:active {
-    position: relative;
-    top: 1px
+    #indexText {
+        font-size: 4vw;
+    }
 }

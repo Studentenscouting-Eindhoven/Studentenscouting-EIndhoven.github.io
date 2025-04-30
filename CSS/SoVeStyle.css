@@ -1,0 +1,27 @@
+h2 {
+    color: white;
+    margin-bottom: 1vw;
+}
+
+#soVeContainer {
+    overflow-y: scroll;
+    margin-left: 4vw;
+}
+
+#soVeContainer p {
+    color: white;
+    width: 95%;
+}
+
+.soVeText {
+    margin-bottom: 2vw;
+}
+
+.soVeLink {
+    color: white;
+    text-decoration: underline;
+}
+
+#socialsContainer {
+    margin: 0;
+}

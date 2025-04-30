@@ -1,0 +1,45 @@
+h2 {
+    color: white;
+    margin-bottom: 1vw;
+}
+
+#SSNContainer {
+    margin-left: 4vw;
+    overflow-y: scroll;
+}
+
+#SSNContainer p {
+    color: white;
+    width: 95%;
+}
+
+#SSNContainer a {
+    color: white;
+}
+
+#SSNText {
+    margin-bottom: 5vw;
+}
+
+.andereStam {
+    display: flex;
+    margin: 2vw 0;
+    width: 95%;
+}
+
+.andereStam img {
+    height: 10vw;
+    margin-right: 1vw;
+    border: solid 3px white;
+    background-color: white;
+}
+
+#socialsContainer {
+    margin: 0;
+    margin-top: 2vw;
+}
+
+.Text_link {
+    color: white;
+    text-decoration: underline;
+}

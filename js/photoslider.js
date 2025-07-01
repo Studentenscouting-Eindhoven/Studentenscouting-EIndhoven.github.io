@@ -1,13 +1,10 @@
 const imageArray = [
-     "BBQ",
-     "BordStele",
-     "GietIjzer",
-     "KampVuur",
-     "KerstDiner_Group",
-     "Picture1",
-     "Picture2",
-     "SSN-SSW-group",
-     "StrohComel"
+     "BussenInBus",
+     "Crazy88",
+     "Intro",
+     "IntroPalen",
+     "Kerstdiner",
+     "yoga",
 ]
 
 let i = 0;

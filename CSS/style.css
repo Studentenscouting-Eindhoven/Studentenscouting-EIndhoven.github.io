@@ -93,7 +93,6 @@
         align-items: center;
         justify-content: center;
     }
-
     #slideImage {
         width: 15vw;
     }
@@ -201,7 +200,7 @@
 
         .button {
             font-size: 4vw;
-            width: 100%;
+            min-width: 100%;
             margin-bottom: 2vh;
         }
 

@@ -27,3 +27,17 @@ h2 {
     color: white;
     text-decoration: underline;
 }
+
+
+@media (orientation: portrait) {
+    .Groepsfoto{
+        width: 95vw;
+    }
+
+
+    #socialsContainer {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+}

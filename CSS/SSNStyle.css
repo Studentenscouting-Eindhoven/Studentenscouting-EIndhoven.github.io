@@ -23,11 +23,26 @@ h2 {
 
 .andereStam {
     display: flex;
+    flex-direction: row;
+    margin: 2vw 0;
+    width: 95%;
+}
+
+.andereStamReversed {
+    display: flex;
+    flex-direction: row-reverse;
     margin: 2vw 0;
     width: 95%;
 }
 
 .andereStam img {
+    height: 10vw;
+    margin-right: 1vw;
+    border: solid 3px white;
+    background-color: white;
+}
+
+.andereStamReversed img {
     height: 10vw;
     margin-right: 1vw;
     border: solid 3px white;
@@ -42,4 +57,27 @@ h2 {
 .Text_link {
     color: white;
     text-decoration: underline;
+}
+
+@media (orientation: portrait) {
+
+    .andereStam {
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+
+    .andereStam img {
+        height: 40vh;
+        margin-bottom: 2vh;
+    }
+
+    .andereStamReversed {
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+
+    .andereStamReversed img {
+        height: 40vh;
+        margin-bottom: 2vh;
+    }
 }

@@ -1,221 +1,235 @@
-    /* Overall settings */
-    *{
-        color:black;
-        padding:0px;
-        margin:0px;
-    	text-decoration:none;
-        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-        box-sizing:border-box;
-    }
+/* Overall settings */
+* {
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif;
+  box-sizing: border-box;
+}
 
-    body {
-        display: flex;
-    }
+body {
+  display: flex;
+}
 
-    h1{
-        color: black;
-        line-height: 7vw;
-        font-size: 3vw;
-        text-align: center;
-    }
-    #leftSide {
-        background-color: #A72D2D;
-        height: 100vh;
-        width: 50vw;
-    }
-    
-    #rightSide {
-        background-color: #A72D2D;
-        height: 100vh;
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+h1 {
+  color: black;
+  line-height: 7vw;
+  font-size: 3vw;
+  text-align: center;
+}
 
-    /* Menu */
+h2 {
+  color: white;
+}
 
-    #hamburgerMenu {
-        display: none;
-    }
+#leftSide {
+  background-color: #a72d2d;
+  height: 100vh;
+  width: 50vw;
+}
 
-    .menu {
-        width: 90%;
-        height: auto;
-        z-index: 2;
-        display: flex;
-        margin: 1vw 3vw;
-        align-items: start;
-    }
-    .menu a {
-        margin-left: 0.5vw;
-        padding: 10px 20px;
-        text-align: center;
-        font-size: 1vw;
-        color: white;
-        border-radius: 10px;
-    }
-    .menu a:hover{
-        background-color: #9D2A2A;
-    }
-    .menu a:active{
-        background-color: #BC3333;
-        position: relative;
-        top: 1px
-    }
-    .menu a.active{
-        background-color: rgba(167, 63, 45, 1);
-    }
+#rightSide {
+  background-color: #a72d2d;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    #menuSelected {
-        font-weight: bold;
-        background-color: white;
-        color: black;
-    }
+.Text_link {
+  color: white;
+  text-decoration: underline;
+}
 
-    #menuSelected:hover {
-        background-color: #D5D5D5;
-    }
+/* Menu */
 
-    /* Slideshow */
-    #slideShow {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 50vw;
-        height: 100vh;
-        border-width: 0px;
-        border-style: solid;
-        border-image-source: linear-gradient(hsl(0 0% 100% / .5), hsl(0 0% 100% / .5));
-        border-image-slice: fill 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #slideImage {
-        width: 15vw;
-    }
+#hamburgerMenu {
+  display: none;
+}
 
-    /* Button for contact */
-    .button {
-        padding: 15px 20px;
-        background-color: white;
-        border-radius: 10px;
-        width: 40%;
-        text-align: center;
-        font-weight: bold;
-        font-size: 1vw;
-    }
-    
-    .button:hover {
-        background-color: #D5D5D5;
-    }
-    
-    .button:active {
-        position: relative;
-        top: 1px
-    }
+.menu {
+  width: 90%;
+  height: auto;
+  z-index: 2;
+  display: flex;
+  margin: 1vw 3vw;
+  align-items: start;
+}
+.menu a {
+  margin-left: 0.5vw;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1vw;
+  color: white;
+  border-radius: 10px;
+}
+.menu a:hover {
+  background-color: #9d2a2a;
+}
+.menu a:active {
+  background-color: #bc3333;
+  position: relative;
+  top: 1px;
+}
+.menu a.active {
+  background-color: rgba(167, 63, 45, 1);
+}
 
-    /* Social media links */
+#menuSelected {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
 
-    #socialsContainer{ /* Social media links at right side of page */
-        margin-left: 4vw;
-        margin-top: 2vw;
-    }
-    
-    #socialsContainer a {
-        display: flex;
-        margin-bottom: 0.5vw;
-    }
-    .socialsIcon{ /* Scale social media icons*/
-        vertical-align: middle;
-        width: 1vw;
-        margin-right: 4px;
-    }
-    .socialsText{
-        color: white;
-    }
+#menuSelected:hover {
+  background-color: #d5d5d5;
+}
 
-    /* Media queries for different screen sizes*/
+/* Slideshow */
+#slideShow {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 100vh;
+  border-width: 0px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    hsl(0 0% 100% / 0.5),
+    hsl(0 0% 100% / 0.5)
+  );
+  border-image-slice: fill 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#slideImage {
+  width: 15vw;
+}
 
-    @media (orientation: portrait) {
-    
-        body {
-            flex-direction: column;
-        }
-        
-        #leftSide {
-            width: 100vw;
-            height: 50vh;
-        }
+/* Button for contact */
+.button {
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1vw;
+}
 
-        #rightSide {
-            width: 100vw;
-            height: auto;
-            min-height: 50vh;
-            justify-content: left;
-        }
+.button:hover {
+  background-color: #d5d5d5;
+}
 
-        #slideShow {
-            width: 100vw;
-            height: 50vh;
-        }
+.button:active {
+  position: relative;
+  top: 1px;
+}
 
-        #slideImage {
-            width: 30vw;
-        }
+/* Social media links */
 
-        #slideTitle {
-            font-size: 6vw;
-        }
+#socialsContainer {
+  /* Social media links at right side of page */
+  margin-top: 2vw;
+}
 
-        #hamburgerMenu {
-            position: absolute;
-            display:block;
-            background-color: #A72D2D;
-            margin: 1vw;
-            border-radius: 6px;
-        }
+#socialsContainer a {
+  display: flex;
+  margin-bottom: 0.5vw;
+}
+.socialsIcon {
+  /* Scale social media icons*/
+  vertical-align: middle;
+  width: 1vw;
+  margin-right: 4px;
+}
+.socialsText {
+  color: white;
+}
 
-        .hamburgerIcon {
-            background-color: transparent;
-            width: 10vw;
-        }
+/* Media queries for different screen sizes*/
 
-        #hamburgerLinks {
-            display: none;
-            flex-direction: column;
-        }
-        
-        #hamburgerLinks a {
-            width: 92vw;
-            margin: 3vw;
-            color: white;
-        }
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
 
-        .menu {
-            display: none;
-        }
+  #leftSide {
+    width: 100vw;
+    height: 50vh;
+  }
 
-        .button {
-            font-size: 4vw;
-            min-width: 100%;
-            margin-bottom: 2vh;
-        }
+  #rightSide {
+    width: 100vw;
+    height: auto;
+    min-height: 50vh;
+    justify-content: left;
+  }
 
-        #socialsContainer {
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
+  #slideShow {
+    width: 100vw;
+    height: 50vh;
+  }
 
-        .socialsText {
-            display: none;
-        }
+  #slideImage {
+    width: 30vw;
+  }
 
-        .socialsIcon {
-            width: 10vw;
-        }
-    }  
+  #slideTitle {
+    font-size: 6vw;
+  }
+
+  #hamburgerMenu {
+    position: absolute;
+    display: block;
+    background-color: #a72d2d;
+    margin: 1vw;
+    border-radius: 6px;
+  }
+
+  .hamburgerIcon {
+    background-color: transparent;
+    width: 10vw;
+  }
+
+  #hamburgerLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  #hamburgerLinks a {
+    width: 92vw;
+    margin: 3vw;
+    color: white;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .button {
+    font-size: 4vw;
+    min-width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  #socialsContainer {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .socialsText {
+    display: none;
+  }
+
+  .socialsIcon {
+    width: 10vw;
+  }
+}

@@ -1,40 +1,42 @@
 #indexContainer {
-    width: 90%;
-    margin-left: 4vw;
-    display: flex;
-    flex-direction: column;
+  width: 90%;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: column;
 }
 
 #indexLineText {
-    display: flex;
-    margin-bottom: 2vw;
+  display: flex;
+  margin-bottom: 2vw;
 }
 
 #indexLine {
-    width: 6px;
-    background-color: white;
-    margin-right: 1vw;
-    border-radius: 10px;
+  width: 6px;
+  background-color: white;
+  margin-right: 1vw;
+  border-radius: 10px;
 }
 
 #indexText {
-    color: white;
-    width: 95%;
-    font-size: 1vw;
+  color: white;
+  width: 95%;
+  font-size: 1vw;
+}
+
+#socialsContainer {
+  margin-left: 4vw;
 }
 
 @media (orientation: portrait) {
-    
-    #indexLineText {
-        margin-top: 2vh;
-    }
+  #indexLineText {
+    margin-top: 2vh;
+  }
 
-    #indexLine {
-        display: none;
-    }
+  #indexLine {
+    display: none;
+  }
 
-    #indexText {
-        font-size: 4vw;
-    }
-
+  #indexText {
+    font-size: 4vw;
+  }
 }

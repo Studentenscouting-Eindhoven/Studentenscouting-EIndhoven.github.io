@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+        <meta charset="utf-8">
+        <title>Studenten Scouting Eindhoven</title>
+        <link rel="icon" href="images/icon/main-icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<wrapper>
+        <!--Fixed section (Menu+Slideshow) -->
+        <div class="Menu">  
+                <a href="Over_ons.html">Wie zijn wij?</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="Sociale_veiligheid.html">Sociale veiligheid</a>
+                <a class="active" href="Contact.html">Contact</a>
+        </div>
+        <div id="Slideshow">
+                <div class="mySlides fade">
+                        <img src="images/header/BordStele.jpg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/GietIjzer.jpg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/KampVuur.jpeg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/SSN-SSW-group.jpg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/StrohComel.jpg" style="width:100%"></div>
+        </div>
+
+
+        <!--Top section (Logo+Title) -->
+        <div id="Header" class="Head_Pos_Fix">
+                <div id="Logo">
+                        <a href="index.html"><img src="images/logo/LEDlogo_Trans.png"/></a>  
+                </div>
+                <div id="Title">
+                        <a href="index.html"><h1> Studenten Scouting Eindhoven</h1></a>
+                </div>
+        </div>
+
+        <!--Middle section (Main body) -->
+        <div id="Content" class="Con_Marg_Fix">
+                <div id="Information">
+                        <h2>Contact</h2>
+                        <br><h4>Voorzitter</h4>
+                                <p>Benji Eversdijk</p>
+                                <a class="Text_link" href="mailto:eindhoven@studentenscouting.nl?">eindhoven@studentenscouting.nl</a><br><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                        <br><h4>Penningmeester</h4>
+                                <p>Jarno de Poorter</p>
+                                <a class="Text_link" href="mailto:eindhoven@studentenscouting.nl?">eindhoven@studentenscouting.nl</a><br><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                        <br><h4>Secretaris</h4>
+                                <p>Vint Leenaars</p>
+                                <a class="Text_link" href="mailto:eindhoven@studentenscouting.nl?">eindhoven@studentenscouting.nl</a><br><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                        <br><h4>Commissie Commissaris</h4>
+                                <p>Hielke van der Wal</p>
+                                <a class="Text_link" href="mailto:eindhoven@studentenscouting.nl?">eindhoven@studentenscouting.nl</a><br><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                        <br><h4>Algemeen lid</h4>
+                                <p>Caitlin van Kessel</p>
+                                <a class="Text_link" href="mailto:eindhoven@studentenscouting.nl?">eindhoven@studentenscouting.nl</a><br><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                        <br><h4>Vertrouwenspersoon</h4>
+                                <p>Raymond Wonink</p>
+                                <a class="Text_link" href="mailto:vertrouwenspersoonSSE@gmail.com?">vertrouwenspersoonSSE@gmail.com</a><br><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                                <br>
+                        <a class="myButton" onclick="location.href='mailto:eindhoven@studentenscouting.nl?';">Neem contact op!</a>
+                        
+                </div>
+                <div id=Socials>
+                        <a href="https://www.facebook.com/StudentenscoutingEindhoven/"><img src="images/icon/facebook.ico" class="Icon"> <!--Facebook--></a>
+                        <a href="https://www.instagram.com/studentenscoutingeindhoven/"><img src="images/icon/instagram.ico" class="Icon"> <!--Instagram--></a>
+                        <a href="mailto:eindhoven@studentenscouting.nl"><img src="images/icon/mail.ico" class="Icon"> <!--Mailadres--></a>
+                </div>
+        </div>
+
+</wrapper>
+        <script src="js/photoslider.js"></script>
+        <script type="text/javascript">
+        window.onscroll = function() {
+                console.log(window.pageYOffset);
+                var head = document.getElementById('Header');
+                var con = document.getElementById('Content');
+                var wid = $(window).width();
+                if ( window.pageYOffset > (0.15*wid) ) {
+                        head.classList.add("Head_Pos_Rel");
+                        head.classList.remove("Head_Pos_Fix");
+                        con.classList.add("Con_Marg_Rel");
+                        con.classList.remove("Con_Marg_Fix");
+                } else {
+                        head.classList.add("Head_Pos_Fix");
+                        head.classList.remove("Head_Pos_Rel");
+                        con.classList.add("Con_Marg_Fix");
+                        con.classList.remove("Con_Marg_Rel");
+                }
+        }
+        </script>
+</body>
+</html>

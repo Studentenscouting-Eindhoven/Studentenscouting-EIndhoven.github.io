@@ -1,0 +1,37 @@
+h2 {
+  color: white;
+  margin-bottom: 1vw;
+}
+
+#FAQContainer {
+  margin-left: 4vw;
+  width: 90%;
+  overflow-y: scroll;
+}
+
+#FAQContainer p {
+  color: white;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.FAQ {
+  border-bottom: solid white 3px;
+  padding: 1vw 0;
+}
+
+#socialsContainer {
+  margin-top: 2vw;
+}
+
+@media (orientation: portrait) {
+  .FAQ {
+    margin-bottom: 2vh;
+  }
+
+  #FAQContainer p {
+    margin-bottom: 1vh;
+  }
+}

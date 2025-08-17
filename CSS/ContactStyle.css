@@ -1,0 +1,30 @@
+h2 {
+  color: white;
+  margin-bottom: 2vw;
+}
+
+#ContactContainer {
+  margin-left: 4vw;
+  margin-bottom: 20vh;
+  overflow-y: scroll;
+}
+
+.ContactPersoon {
+  margin-bottom: 1vw;
+  padding-bottom: 1vw;
+  border-bottom: 2px solid white;
+  width: 95%;
+}
+
+.ContactPersoon h3 {
+  color: white;
+}
+
+.ContactPersoon p {
+  color: white;
+}
+
+.ContactPersoon a {
+  color: white;
+  text-decoration: underline;
+}

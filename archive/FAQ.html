@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+        <meta charset="utf-8">
+        <title>Studenten Scouting Eindhoven</title>
+        <link rel="icon" href="images/icon/main-icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<wrapper>
+        <!--Fixed section (Menu+Slideshow) -->
+        <div class="Menu">  
+                <a href="Over_ons.html">Wie zijn wij?</a>
+                <a class="active" href="FAQ.html">FAQ</a>
+                <a href="Sociale_veiligheid.html">Sociale veiligheid</a>
+                <a href="Contact.html">Contact</a>
+        </div>
+        <div id="Slideshow">
+                <div class="mySlides fade">
+                        <img src="images/header/BordStele.jpg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/GietIjzer.jpg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/KampVuur.jpeg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/SSN-SSW-group.jpg" style="width:100%"></div>
+                <div class="mySlides fade">
+                        <img src="images/header/StrohComel.jpg" style="width:100%"></div>
+        </div>
+
+        <!--Top section (Logo+Title) -->
+        <div id="Header" class="Head_Pos_Fix">
+                <div id="Logo">
+                        <a href="index.html"><img src="images/logo/LEDlogo_Trans.png"/></a>  
+                </div>
+                <div id="Title">
+                        <a href="index.html"><h1> Studenten Scouting Eindhoven</h1></a>
+                </div>
+        </div>
+
+        <!--Middle section (Main body) -->
+        <div id="Content" class="Con_Marg_Fix">
+                <div id="Information">
+                        <h2>FAQ</h2>
+                        <br><h4>"Doen jullie aan een ontgroening?"</h4>
+                                <p>Nee daar doen we niet aan. We verwelkomen iedereen met open armen, en hopen vooral dat iedereen een leuke tijd heeft!</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+
+                        <br><h4>"Wanneer hebben jullie opkomst?"</h4>
+                                <p>Op woensdag avond, 1 keer in de twee weken.</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+
+                        <br><h4>"Wat voor een activiteiten doen jullie?"</h4>
+                                <p>Dat verschilt heel erg, omdat de leden hier zelf een invulling voor mogen bedenken. Denk bij activiteiten aan een pubquiz, dropping, of andere gekke opdracht.</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+
+                        <br><h4>"Hoeveel kost een lidmaatschap"</h4>
+                                <p>Een lidmaatschap kost 50 euro per jaar</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+
+                        <br><h4>"Moet je al scouting ervaring hebben om bij Studenten Scouting Eindhoven te kunnen?"</h4>
+                                <p>Nee hoor, Studenten Scouting Eindhoven is voor iedereen, ervaring maakt daarbij helemaal niks uit!</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+
+                        <br><h4>"Waar vinden jullie opkomsten plaats?"</h4>
+                                <p>Wij draaien doorgaans opkomst in het gebouw van Scouting st. Rafael. Ook zijn we wel eens in de stad of op het TU terein te vinden</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+
+                        <br><h4>"Waar moet ik aan voldoen om lid te mogen worden?"</h4>
+                                <p>Als je studeert (WO, HBO of MBO), ben je van harte welkom om mee te draaien.</p><br>
+                                <hr width="100%" color="#a73f2d" size="5">
+                </div>
+                <div id=Socials>
+                        <a href="https://www.facebook.com/StudentenscoutingEindhoven/"><img src="images/icon/facebook.ico" class="Icon"> <!--Facebook--></a>
+                        <a href="https://www.instagram.com/studentenscoutingeindhoven/"><img src="images/icon/instagram.ico" class="Icon"> <!--Instagram--></a>
+                        <a href="mailto:eindhoven@studentenscouting.nl"><img src="images/icon/mail.ico" class="Icon"> <!--Mailadres--></a>
+                </div>
+        </div>
+
+</wrapper>
+        <script src="js/photoslider.js"></script>
+        <script type="text/javascript">
+        window.onscroll = function() {
+                console.log(window.pageYOffset);
+                var head = document.getElementById('Header');
+                var con = document.getElementById('Content');
+                var wid = $(window).width();
+                if ( window.pageYOffset > (0.15*wid) ) {
+                        head.classList.add("Head_Pos_Rel");
+                        head.classList.remove("Head_Pos_Fix");
+                        con.classList.add("Con_Marg_Rel");
+                        con.classList.remove("Con_Marg_Fix");
+                } else {
+                        head.classList.add("Head_Pos_Fix");
+                        head.classList.remove("Head_Pos_Rel");
+                        con.classList.add("Con_Marg_Fix");
+                        con.classList.remove("Con_Marg_Rel");
+                }
+        }
+        </script>
+</body>
+</html>

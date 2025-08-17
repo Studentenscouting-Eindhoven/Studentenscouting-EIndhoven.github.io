@@ -1,0 +1,29 @@
+#overOnsContainer {
+  margin-left: 4vw;
+  overflow-y: scroll;
+  width: 90%;
+}
+
+.Groepsfoto {
+  width: 30vw;
+  margin: 3vw 0;
+}
+
+.overOnsText {
+  color: white;
+}
+
+#socialsContainer {
+  margin-top: 2vw;
+}
+
+@media (orientation: portrait) {
+  .Groepsfoto {
+    width: 95vw;
+  }
+
+  #socialsContainer {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+}
